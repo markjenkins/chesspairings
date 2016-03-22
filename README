@@ -1,0 +1,11 @@
+The scripts in this project are a front end to JaVaFo (http://www.rrweb.org/javafo/), the official FIDE pairing engine for certifying other implementations of the Dutch algorithm for swiss pairings.
+
+This is currently hard coded for running a 5 round tournament.
+
+Downloading javafo.jar into this directory is required.
+
+All user input is currently done through a CSV file and certain fields have to be filled out in compliance with the JaVaFo documentation. I've been editing these CSV files with a spreadsheet. The Makefile illustrates the pipeline from pre-round files to results to subsequent pre-round file.
+
+The plan is to develop a front-end GUI as an alternative to the current CSV based inputs. Subsequently, an attempt will be made to replace the JaVaFo with a clean-room implementation based on the published algorithm ( http://www.fide.com/fide/handbook.html?id=167&view=article ), and downloading JaVaFo will only be required for validating the test suite inputs.
+
+So, not yet a user-friendly option. Express your interest in this being fully developed.
